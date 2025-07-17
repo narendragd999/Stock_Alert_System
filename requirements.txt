@@ -1,0 +1,5 @@
+streamlit==1.38.0 
+yfinance==0.2.44 
+pandas==2.2.3 
+python-telegram-bot==21.4 
+schedule==1.2.2
