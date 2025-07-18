@@ -10,6 +10,8 @@ import threading
 import uuid
 from datetime import datetime
 import pytz
+from dateutil.parser import parse
+import math
 
 # Set timezone to IST
 ist = pytz.timezone('Asia/Kolkata')
@@ -19,7 +21,7 @@ def init_db():
     conn = sqlite3.connect('stock_alerts.db')
     c = conn.cursor()
     
-    # Create stocks table if it doesn't exist
+    # Create stocks table with unique constraint on id
     c.execute('''CREATE TABLE IF NOT EXISTS stocks
                  (id TEXT PRIMARY KEY, 
                   symbol TEXT, 
@@ -30,24 +32,34 @@ def init_db():
                   last_notified_alert REAL, 
                   last_notified_target REAL,
                   last_notified_pre_alert REAL, 
-                  last_notified_pre_target REAL)''')
+                  last_notified_pre_target REAL,
+                  alert_trigger_time TEXT,
+                  target_trigger_time TEXT,
+                  status TEXT)''')
     
     # Check if the new columns exist and add them if they don't
     c.execute("PRAGMA table_info(stocks)")
     columns = [info[1] for info in c.fetchall()]
     
-    if 'last_notified_pre_alert' not in columns:
-        c.execute("ALTER TABLE stocks ADD COLUMN last_notified_pre_alert REAL DEFAULT 0")
+    if 'alert_trigger_time' not in columns:
+        c.execute("ALTER TABLE stocks ADD COLUMN alert_trigger_time TEXT")
     
-    if 'last_notified_pre_target' not in columns:
-        c.execute("ALTER TABLE stocks ADD COLUMN last_notified_pre_target REAL DEFAULT 0")
+    if 'target_trigger_time' not in columns:
+        c.execute("ALTER TABLE stocks ADD COLUMN target_trigger_time TEXT")
+    
+    if 'status' not in columns:
+        c.execute("ALTER TABLE stocks ADD COLUMN status TEXT DEFAULT 'Open'")
     
     # Create strategies table if it doesn't exist
     c.execute('''CREATE TABLE IF NOT EXISTS strategies
                  (id TEXT PRIMARY KEY, name TEXT)''')
     
+    # Ensure no duplicate IDs in stocks table
+    c.execute("CREATE UNIQUE INDEX IF NOT EXISTS idx_stocks_id ON stocks(id)")
+    
     conn.commit()
     conn.close()
+
 # Initialize database
 init_db()
 
@@ -89,6 +101,8 @@ def initialize_nse_session():
 # Function to fetch current price from NSE
 def get_current_price_nse(ticker):
     global nse_session
+    if not isinstance(ticker, str) or pd.isna(ticker):
+        return None
     try:
         ticker = ticker.upper().replace(".NS", "")
         if nse_session is None and not initialize_nse_session():
@@ -111,6 +125,20 @@ def get_current_price_nse(ticker):
         return None
 
 # Streamlit app
+st.set_page_config(page_title="Stock Alert System", layout="wide")
+st.markdown("""
+    <style>
+    .main { background-color: #f5f5f5; padding: 20px; }
+    .stButton>button { background-color: #4CAF50; color: white; border-radius: 5px; }
+    .stButton>button:hover { background-color: #45a049; }
+    .stExpander { background-color: white; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .css-1d391kg { background-color: #ffffff; }
+    .search-bar { padding: 10px; margin-bottom: 20px; }
+    .status-open { background-color: #e6f3ff; }
+    .status-closed { background-color: #ffe6e6; }
+    </style>
+""", unsafe_allow_html=True)
+
 st.title("Stock Alert System")
 
 # Sidebar for configuration
@@ -153,17 +181,20 @@ with st.form(key="add_stock_form"):
     submit_button = st.form_submit_button("Add Stock")
 
     if submit_button and symbol:
-        price = get_current_price_nse(symbol)
-        if price is not None:
-            conn = sqlite3.connect('stock_alerts.db')
-            c = conn.cursor()
-            c.execute("INSERT INTO stocks (id, symbol, alert_price, target_price, strategy, enabled, last_notified_alert, last_notified_target, last_notified_pre_alert, last_notified_pre_target) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-                     (str(uuid.uuid4()), symbol.upper(), alert_price, target_price, strategy, 1, 0, 0, 0, 0))
-            conn.commit()
-            conn.close()
-            st.success(f"Added {symbol.upper()} to alerts!")
+        if not isinstance(symbol, str) or not symbol.strip():
+            st.error("Please enter a valid stock symbol")
         else:
-            st.error(f"Invalid symbol {symbol.upper()}: No price data available")
+            price = get_current_price_nse(symbol)
+            if price is not None:
+                conn = sqlite3.connect('stock_alerts.db')
+                c = conn.cursor()
+                c.execute("INSERT INTO stocks (id, symbol, alert_price, target_price, strategy, enabled, last_notified_alert, last_notified_target, last_notified_pre_alert, last_notified_pre_target, alert_trigger_time, target_trigger_time, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                         (str(uuid.uuid4()), symbol.upper(), alert_price, target_price, strategy, 1, 0, 0, 0, 0, None, None, 'Open'))
+                conn.commit()
+                conn.close()
+                st.success(f"Added {symbol.upper()} to alerts!")
+            else:
+                st.error(f"Invalid symbol {symbol.upper()}: No price data available")
 
 # Display and manage stocks
 st.subheader("Current Stock Alerts")
@@ -171,8 +202,104 @@ conn = sqlite3.connect('stock_alerts.db')
 df = pd.read_sql_query("SELECT * FROM stocks", conn)
 conn.close()
 
-if not df.empty:
-    for index, row in df.iterrows():
+# Check if DataFrame is empty
+if df.empty:
+    st.info("No stock alerts found. Add a stock to start tracking.")
+else:
+    # Remove any rows with invalid symbols
+    df = df[df['symbol'].notna() & df['symbol'].str.strip().astype(bool)]
+
+    # Calculate additional metrics for display
+    def calculate_metrics(row):
+        if not isinstance(row['symbol'], str) or pd.isna(row['symbol']) or not row['symbol'].strip():
+            return pd.Series({
+                'Current Price': None,
+                'Target %': None,
+                'Remaining Target %': None,
+                'Duration (Days)': None,
+                'Duration (Date)': None
+            })
+        current_price = get_current_price_nse(row['symbol'])
+        target_percentage = abs(row['target_price'] - row['alert_price']) / row['alert_price'] * 100 if row['alert_price'] > 0 else 0
+        remaining_target_percentage = abs(row['target_price'] - current_price) / row['alert_price'] * 100 if row['alert_price'] > 0 and row['status'] == 'Open' and current_price is not None else 0
+        duration_days = duration_date = None
+        if row['alert_trigger_time'] and row['target_trigger_time']:
+            try:
+                alert_time = parse(row['alert_trigger_time'])
+                target_time = parse(row['target_trigger_time'])
+                duration = target_time - alert_time
+                duration_days = duration.days + duration.seconds / (24 * 3600)
+                duration_date = f"{duration.days} days, {int(duration.seconds / 3600)} hours"
+            except Exception:
+                duration_days = duration_date = None
+        return pd.Series({
+            'Current Price': current_price,
+            'Target %': target_percentage,
+            'Remaining Target %': remaining_target_percentage,
+            'Duration (Days)': duration_days,
+            'Duration (Date)': duration_date
+        })
+
+    # Prepare data for display
+    display_df = df.copy().reset_index(drop=True)  # Ensure unique index
+    metrics = display_df.apply(calculate_metrics, axis=1)
+    display_df = pd.concat([display_df, metrics], axis=1)
+
+    # Filter and search
+    st.markdown('<div class="search-bar">', unsafe_allow_html=True)
+    col1, col2 = st.columns([3, 1])
+    with col1:
+        search_term = st.text_input("Search Stocks", placeholder="Enter symbol or strategy...")
+    with col2:
+        status_filter = st.selectbox("Filter by Status", ["All", "Open", "Closed"])
+    st.markdown('</div>', unsafe_allow_html=True)
+
+    # Apply filters
+    filtered_df = display_df.copy().reset_index(drop=True)  # Ensure unique index
+    if search_term:
+        filtered_df = filtered_df[
+            filtered_df['symbol'].str.contains(search_term, case=False, na=False) |
+            filtered_df['strategy'].str.contains(search_term, case=False, na=False)
+        ]
+    if status_filter != "All":
+        filtered_df = filtered_df[filtered_df['status'] == status_filter]
+
+    # Ensure all required columns exist
+    required_columns = [
+        'symbol', 'alert_price', 'target_price', 'strategy', 'Current Price',
+        'Target %', 'Remaining Target %', 'alert_trigger_time', 'target_trigger_time',
+        'Duration (Days)', 'Duration (Date)', 'status'
+    ]
+    for col in required_columns:
+        if col not in filtered_df.columns:
+            filtered_df[col] = None
+
+    # Display table with sorting
+    st.dataframe(
+        filtered_df[required_columns].style.apply(
+            lambda x: ['background-color: #e6f3ff' if x['status'] == 'Open' else 'background-color: #ffe6e6' for _ in x],
+            axis=1
+        ).format(
+            {
+                'alert_price': '₹{:.2f}',
+                'target_price': '₹{:.2f}',
+                'Current Price': lambda x: f'₹{x:.2f}' if pd.notna(x) else 'N/A',
+                'Target %': '{:.2f}%',
+                'Remaining Target %': '{:.2f}%',
+                'Duration (Days)': lambda x: f'{x:.2f}' if pd.notna(x) else 'N/A',
+                'Duration (Date)': lambda x: x if pd.notna(x) else 'N/A',
+                'alert_trigger_time': lambda x: x if pd.notna(x) else 'Not triggered',
+                'target_trigger_time': lambda x: x if pd.notna(x) else 'Not triggered',
+                'status': '{}'
+            },
+            na_rep='N/A'
+        ),
+        use_container_width=True,
+        height=400
+    )
+
+    # Detailed view and management
+    for index, row in filtered_df.iterrows():
         with st.expander(f"{row['symbol']} - {row['strategy']}"):
             col1, col2, col3, col4 = st.columns(4)
             with col1:
@@ -182,7 +309,7 @@ if not df.empty:
                     c.execute("DELETE FROM stocks WHERE id = ?", (row['id'],))
                     conn.commit()
                     conn.close()
-                    st.experimental_rerun()
+                    st.rerun()
             with col2:
                 if st.button("Edit", key=f"edit_{row['id']}"):
                     st.session_state[f"edit_mode_{row['id']}"] = True
@@ -194,7 +321,7 @@ if not df.empty:
                     c.execute("UPDATE stocks SET enabled = ? WHERE id = ?", (new_status, row['id']))
                     conn.commit()
                     conn.close()
-                    st.experimental_rerun()
+                    st.rerun()
             with col4:
                 st.write(f"Enabled: {'Yes' if row['enabled'] else 'No'}")
 
@@ -206,7 +333,7 @@ if not df.empty:
                     with ecol2:
                         new_target_price = st.number_input("New Target Price", value=float(row['target_price']), key=f"target_{row['id']}")
                     with ecol3:
-                        new_strategy = st.selectbox("New Strategy", strategies, index=strategies.index(row['strategy']), key=f"strat_{row['id']}")
+                        new_strategy = st.selectbox("New Strategy", strategies, index=strategies.index(row['strategy']) if row['strategy'] in strategies else 0, key=f"strat_{row['id']}")
                     if st.form_submit_button("Save Changes"):
                         conn = sqlite3.connect('stock_alerts.db')
                         c = conn.cursor()
@@ -215,15 +342,20 @@ if not df.empty:
                         conn.commit()
                         conn.close()
                         st.session_state[f"edit_mode_{row['id']}"] = False
-                        st.experimental_rerun()
+                        st.rerun()
 
             st.write(f"Alert Price: ₹{row['alert_price']:.2f}")
             st.write(f"Target Price: ₹{row['target_price']:.2f}")
-            current_price = get_current_price_nse(row['symbol'])
-            if current_price:
-                st.write(f"Current Price: ₹{current_price:.2f}")
-            else:
-                st.write("Current Price: Unavailable")
+            st.write(f"Current Price: ₹{row['Current Price']:.2f}" if pd.notna(row['Current Price']) else "Current Price: Unavailable")
+            st.write(f"Target %: {row['Target %']:.2f}%")
+            if row['status'] == 'Open':
+                st.write(f"Remaining Target %: {row['Remaining Target %']:.2f}%")
+            st.write(f"Alert Trigger Time: {row['alert_trigger_time'] or 'Not triggered'}")
+            st.write(f"Target Trigger Time: {row['target_trigger_time'] or 'Not triggered'}")
+            if pd.notna(row['Duration (Date)']):
+                st.write(f"Target Duration: {row['Duration (Date)']}")
+            if pd.notna(row['Duration (Days)']):
+                st.write(f"Target Duration (Days): {row['Duration (Days)']:.2f}")
 
 # Price checking and notification logic
 async def send_telegram_message(message):
@@ -238,11 +370,13 @@ def check_prices():
     conn.close()
 
     for _, row in df.iterrows():
+        if not isinstance(row['symbol'], str) or pd.isna(row['symbol']) or not row['symbol'].strip():
+            continue
         try:
             current_price = get_current_price_nse(row['symbol'])
             if current_price is None:
                 continue
-            current_time = time.time()
+            current_time = datetime.now(ist).isoformat()
 
             # Check alert price
             if (row['alert_price'] > 0 and 
@@ -252,11 +386,12 @@ def check_prices():
                 asyncio.run(send_telegram_message(message))
                 conn = sqlite3.connect('stock_alerts.db')
                 c = conn.cursor()
-                c.execute("UPDATE stocks SET last_notified_alert = ? WHERE id = ?", (current_price, row['id']))
+                c.execute("UPDATE stocks SET last_notified_alert = ?, alert_trigger_time = ? WHERE id = ?",
+                         (current_price, current_time, row['id']))
                 conn.commit()
                 conn.close()
 
-                        # Check target price
+            # Check target price
             if (row['target_price'] > 0 and 
                 ((current_price <= row['target_price'] and current_price < row['last_notified_target']) or 
                  (current_price >= row['target_price'] and current_price > row['last_notified_target']))):
@@ -264,7 +399,8 @@ def check_prices():
                 asyncio.run(send_telegram_message(message))
                 conn = sqlite3.connect('stock_alerts.db')
                 c = conn.cursor()
-                c.execute("UPDATE stocks SET last_notified_target = ? WHERE id = ?", (current_price, row['id']))
+                c.execute("UPDATE stocks SET last_notified_target = ?, target_trigger_time = ?, status = ? WHERE id = ?",
+                         (current_price, current_time, 'Closed', row['id']))
                 conn.commit()
                 conn.close()
 
