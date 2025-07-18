@@ -21,7 +21,7 @@ def init_db():
     conn = sqlite3.connect('stock_alerts.db')
     c = conn.cursor()
     
-    # Create stocks table with unique constraint on id
+    # Create stocks table with unique constraint on id and added_time column
     c.execute('''CREATE TABLE IF NOT EXISTS stocks
                  (id TEXT PRIMARY KEY, 
                   symbol TEXT, 
@@ -35,7 +35,8 @@ def init_db():
                   last_notified_pre_target REAL,
                   alert_trigger_time TEXT,
                   target_trigger_time TEXT,
-                  status TEXT)''')
+                  status TEXT,
+                  added_time TEXT)''')
     
     # Check if the new columns exist and add them if they don't
     c.execute("PRAGMA table_info(stocks)")
@@ -49,6 +50,9 @@ def init_db():
     
     if 'status' not in columns:
         c.execute("ALTER TABLE stocks ADD COLUMN status TEXT DEFAULT 'Open'")
+    
+    if 'added_time' not in columns:
+        c.execute("ALTER TABLE stocks ADD COLUMN added_time TEXT")
     
     # Create strategies table if it doesn't exist
     c.execute('''CREATE TABLE IF NOT EXISTS strategies
@@ -188,8 +192,9 @@ with st.form(key="add_stock_form"):
             if price is not None:
                 conn = sqlite3.connect('stock_alerts.db')
                 c = conn.cursor()
-                c.execute("INSERT INTO stocks (id, symbol, alert_price, target_price, strategy, enabled, last_notified_alert, last_notified_target, last_notified_pre_alert, last_notified_pre_target, alert_trigger_time, target_trigger_time, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-                         (str(uuid.uuid4()), symbol.upper(), alert_price, target_price, strategy, 1, 0, 0, 0, 0, None, None, 'Open'))
+                added_time = datetime.now(ist).isoformat()
+                c.execute("INSERT INTO stocks (id, symbol, alert_price, target_price, strategy, enabled, last_notified_alert, last_notified_target, last_notified_pre_alert, last_notified_pre_target, alert_trigger_time, target_trigger_time, status, added_time) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                         (str(uuid.uuid4()), symbol.upper(), alert_price, target_price, strategy, 1, 0, 0, 0, 0, None, None, 'Open', added_time))
                 conn.commit()
                 conn.close()
                 st.success(f"Added {symbol.upper()} to alerts!")
@@ -356,6 +361,7 @@ else:
                 st.write(f"Target Duration: {row['Duration (Date)']}")
             if pd.notna(row['Duration (Days)']):
                 st.write(f"Target Duration (Days): {row['Duration (Days)']:.2f}")
+            st.write(f"Added Time: {row['added_time'] or 'N/A'}")
 
 # Price checking and notification logic
 async def send_telegram_message(message):
@@ -376,10 +382,15 @@ def check_prices():
             current_price = get_current_price_nse(row['symbol'])
             if current_price is None:
                 continue
-            current_time = datetime.now(ist).isoformat()
+            current_time = datetime.now(ist)
+            added_time = parse(row['added_time']) if row['added_time'] else current_time
+
+            # Only trigger alerts if current time is after added_time
+            if current_time <= added_time:
+                continue
 
             # Check alert price
-            if (row['alert_price'] > 0 and 
+            if (row['alert_price'] > 0 and row['alert_trigger_time'] is None and
                 ((current_price <= row['alert_price'] and current_price < row['last_notified_alert']) or 
                  (current_price >= row['alert_price'] and current_price > row['last_notified_alert']))):
                 message = f"🚨 Alert: {row['symbol']} hit alert price ₹{row['alert_price']:.2f}! Current: ₹{current_price:.2f}"
@@ -387,7 +398,7 @@ def check_prices():
                 conn = sqlite3.connect('stock_alerts.db')
                 c = conn.cursor()
                 c.execute("UPDATE stocks SET last_notified_alert = ?, alert_trigger_time = ? WHERE id = ?",
-                         (current_price, current_time, row['id']))
+                         (current_price, current_time.isoformat(), row['id']))
                 conn.commit()
                 conn.close()
 
@@ -400,7 +411,7 @@ def check_prices():
                 conn = sqlite3.connect('stock_alerts.db')
                 c = conn.cursor()
                 c.execute("UPDATE stocks SET last_notified_target = ?, target_trigger_time = ?, status = ? WHERE id = ?",
-                         (current_price, current_time, 'Closed', row['id']))
+                         (current_price, current_time.isoformat(), 'Closed', row['id']))
                 conn.commit()
                 conn.close()
 
