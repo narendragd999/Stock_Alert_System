@@ -389,10 +389,9 @@ def check_prices():
             if current_time <= added_time:
                 continue
 
-            # Check alert price
+            # Check alert price (only once when alert_trigger_time is None)
             if (row['alert_price'] > 0 and row['alert_trigger_time'] is None and
-                ((current_price <= row['alert_price'] and current_price < row['last_notified_alert']) or 
-                 (current_price >= row['alert_price'] and current_price > row['last_notified_alert']))):
+                (current_price <= row['alert_price'] or current_price >= row['alert_price'])):
                 message = f"🚨 Alert: {row['symbol']} hit alert price ₹{row['alert_price']:.2f}! Current: ₹{current_price:.2f}"
                 asyncio.run(send_telegram_message(message))
                 conn = sqlite3.connect('stock_alerts.db')
@@ -402,10 +401,9 @@ def check_prices():
                 conn.commit()
                 conn.close()
 
-            # Check target price
-            if (row['target_price'] > 0 and 
-                ((current_price <= row['target_price'] and current_price < row['last_notified_target']) or 
-                 (current_price >= row['target_price'] and current_price > row['last_notified_target']))):
+            # Check target price (only once when target_trigger_time is None)
+            if (row['target_price'] > 0 and row['target_trigger_time'] is None and
+                (current_price <= row['target_price'] or current_price >= row['target_price'])):
                 message = f"🎯 Target: {row['symbol']} hit target price ₹{row['target_price']:.2f}! Current: ₹{current_price:.2f}"
                 asyncio.run(send_telegram_message(message))
                 conn = sqlite3.connect('stock_alerts.db')
