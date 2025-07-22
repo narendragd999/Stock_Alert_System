@@ -2424,3 +2424,824 @@
 2025-07-21 17:51:16,088 - ERROR - JSON decode error for HAVELLS: Expecting value: line 1 column 1 (char 0). Response may be empty or malformed.
 2025-07-21 17:51:16,855 - ERROR - 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/BSE.NS?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=BSE.NS&crumb=Edge%3A+Too+Many+Requests
 2025-07-21 17:51:17,662 - ERROR - JSON decode error for BSE: Expecting value: line 1 column 1 (char 0). Response may be empty or malformed.
+2025-07-22 07:01:29,607 - INFO - Fetched data for CLEAN: Current price \u20b91276.10, Green candle low \u20b91436.00, High \u20b91466.40
+2025-07-22 07:01:30,666 - INFO - Fetched data for GRAVITA: Current price \u20b91713.30, Green candle low \u20b91717.00, High \u20b91737.70
+2025-07-22 07:01:31,853 - INFO - Fetched data for NAM-INDIA: Current price \u20b9863.20, Green candle low \u20b9835.75, High \u20b9873.35
+2025-07-22 07:01:33,079 - INFO - Fetched data for POLYMED: Current price \u20b92087.90, Green candle low \u20b92081.00, High \u20b92147.60
+2025-07-22 07:01:34,163 - INFO - Fetched data for KPITTECH: Current price \u20b91264.60, Green candle low \u20b91265.60, High \u20b91296.50
+2025-07-22 07:01:35,240 - INFO - Fetched data for BAJAJHFL: Current price \u20b9121.39, Green candle low \u20b9120.75, High \u20b9123.98
+2025-07-22 07:01:36,820 - INFO - Fetched data for HAVELLS: Current price \u20b91531.60, Green candle low \u20b91511.60, High \u20b91537.00
+2025-07-22 07:01:37,913 - INFO - Fetched data for BSE: Current price \u20b92521.30, Green candle low \u20b92433.10, High \u20b92535.00
+2025-07-22 07:04:48,296 - INFO - Fetched data for CLEAN: Current price \u20b91276.10, Green candle low \u20b91436.00, High \u20b91466.40
+2025-07-22 07:04:49,759 - INFO - Fetched data for GRAVITA: Current price \u20b91713.30, Green candle low \u20b91717.00, High \u20b91737.70
+2025-07-22 07:04:51,212 - INFO - Fetched data for NAM-INDIA: Current price \u20b9863.20, Green candle low \u20b9835.75, High \u20b9873.35
+2025-07-22 07:04:52,566 - INFO - Fetched data for POLYMED: Current price \u20b92087.90, Green candle low \u20b92081.00, High \u20b92147.60
+2025-07-22 07:04:53,900 - INFO - Fetched data for KPITTECH: Current price \u20b91264.60, Green candle low \u20b91265.60, High \u20b91296.50
+2025-07-22 07:04:55,684 - INFO - Fetched data for BAJAJHFL: Current price \u20b9121.39, Green candle low \u20b9120.75, High \u20b9123.98
+2025-07-22 07:04:57,042 - INFO - Fetched data for HAVELLS: Current price \u20b91531.60, Green candle low \u20b91511.60, High \u20b91537.00
+2025-07-22 07:04:58,394 - INFO - Fetched data for BSE: Current price \u20b92521.30, Green candle low \u20b92433.10, High \u20b92535.00
+2025-07-22 07:07:07,942 - ERROR - Error fetching data for CLEAN: Failed to perform, curl: (28) Connection timed out after 30010 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-07-22 07:07:37,951 - ERROR - Error fetching data for GRAVITA: Failed to perform, curl: (28) Connection timed out after 30003 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-07-22 07:07:43,339 - ERROR - Error fetching data for NAM-INDIA: Failed to perform, curl: (7) Failed to connect to fc.yahoo.com port 443 after 5376 ms: Couldn't connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-07-22 07:07:43,414 - ERROR - Error fetching data for POLYMED: Failed to perform, curl: (7) Failed to connect to fc.yahoo.com port 443 after 48 ms: Couldn't connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-07-22 07:07:43,427 - ERROR - Error fetching data for KPITTECH: Failed to perform, curl: (7) Failed to connect to fc.yahoo.com port 443 after 4 ms: Couldn't connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-07-22 07:07:43,442 - ERROR - Error fetching data for BAJAJHFL: Failed to perform, curl: (7) Failed to connect to fc.yahoo.com port 443 after 7 ms: Couldn't connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-07-22 07:07:43,455 - ERROR - Error fetching data for HAVELLS: Failed to perform, curl: (7) Failed to connect to fc.yahoo.com port 443 after 6 ms: Couldn't connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-07-22 07:07:43,463 - ERROR - Error fetching data for BSE: Failed to perform, curl: (7) Failed to connect to fc.yahoo.com port 443 after 3 ms: Couldn't connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-07-22 07:13:42,973 - INFO - Fetched data for CLEAN: Current price \u20b91276.10, Green candle low \u20b91436.00, High \u20b91466.40
+2025-07-22 07:13:44,472 - INFO - Fetched data for GRAVITA: Current price \u20b91713.30, Green candle low \u20b91717.00, High \u20b91737.70
+2025-07-22 07:13:45,326 - INFO - HTTP Request: POST https://api.telegram.org/bot7826437102:AAFdVAv7b0go3wOcPLNMZMVAfRM8O2SX3xQ/sendMessage "HTTP/1.1 200 OK"
+2025-07-22 07:13:45,327 - INFO - Sent Telegram message: \U0001f6a8 V20 Alert: GRAVITA hit alert price \u20b91638.85 (20% gain, green candle low)! Current: \u20b91713.30
+2025-07-22 07:13:45,335 - INFO - Alert triggered for GRAVITA at \u20b91713.30
+2025-07-22 07:13:46,827 - INFO - Fetched data for NAM-INDIA: Current price \u20b9863.20, Green candle low \u20b9835.75, High \u20b9873.35
+2025-07-22 07:13:48,312 - INFO - Fetched data for POLYMED: Current price \u20b92087.90, Green candle low \u20b92081.00, High \u20b92147.60
+2025-07-22 07:13:48,315 - ERROR - Failed to send Telegram message: Unknown error in HTTP implementation: RuntimeError('Event loop is closed')
+2025-07-22 07:13:48,327 - INFO - Alert triggered for POLYMED at \u20b92087.90
+2025-07-22 07:13:49,811 - INFO - Fetched data for KPITTECH: Current price \u20b91264.60, Green candle low \u20b91265.60, High \u20b91296.50
+2025-07-22 07:13:50,537 - INFO - HTTP Request: POST https://api.telegram.org/bot7826437102:AAFdVAv7b0go3wOcPLNMZMVAfRM8O2SX3xQ/sendMessage "HTTP/1.1 200 OK"
+2025-07-22 07:13:50,540 - INFO - Sent Telegram message: \U0001f6a8 V20 Alert: KPITTECH hit alert price \u20b91223.50 (20% gain, green candle low)! Current: \u20b91264.60
+2025-07-22 07:13:50,552 - INFO - Alert triggered for KPITTECH at \u20b91264.60
+2025-07-22 07:13:53,475 - INFO - Fetched data for BAJAJHFL: Current price \u20b9121.39, Green candle low \u20b9120.75, High \u20b9123.98
+2025-07-22 07:13:55,146 - INFO - Fetched data for HAVELLS: Current price \u20b91531.60, Green candle low \u20b91511.60, High \u20b91537.00
+2025-07-22 07:13:56,637 - INFO - Fetched data for BSE: Current price \u20b92521.30, Green candle low \u20b92433.10, High \u20b92535.00
+2025-07-22 07:18:59,229 - INFO - Fetched data for CLEAN: Current price \u20b91276.10, Green candle low \u20b91436.00, High \u20b91466.40
+2025-07-22 07:19:00,303 - INFO - Fetched data for GRAVITA: Current price \u20b91713.30, Green candle low \u20b91717.00, High \u20b91737.70
+2025-07-22 07:19:01,581 - INFO - Fetched data for NAM-INDIA: Current price \u20b9863.20, Green candle low \u20b9835.75, High \u20b9873.35
+2025-07-22 07:19:02,568 - INFO - Fetched data for POLYMED: Current price \u20b92087.90, Green candle low \u20b92081.00, High \u20b92147.60
+2025-07-22 07:19:03,576 - INFO - Fetched data for KPITTECH: Current price \u20b91264.60, Green candle low \u20b91265.60, High \u20b91296.50
+2025-07-22 07:19:04,601 - INFO - Fetched data for BAJAJHFL: Current price \u20b9121.39, Green candle low \u20b9120.75, High \u20b9123.98
+2025-07-22 07:19:05,616 - INFO - Fetched data for HAVELLS: Current price \u20b91531.60, Green candle low \u20b91511.60, High \u20b91537.00
+2025-07-22 07:19:06,585 - INFO - Fetched data for BSE: Current price \u20b92521.30, Green candle low \u20b92433.10, High \u20b92535.00
+2025-07-22 07:24:08,730 - INFO - Fetched data for CLEAN: Current price \u20b91276.10, Green candle low \u20b91436.00, High \u20b91466.40
+2025-07-22 07:24:09,763 - INFO - Fetched data for GRAVITA: Current price \u20b91713.30, Green candle low \u20b91717.00, High \u20b91737.70
+2025-07-22 07:24:11,350 - INFO - Fetched data for NAM-INDIA: Current price \u20b9863.20, Green candle low \u20b9835.75, High \u20b9873.35
+2025-07-22 07:24:12,287 - INFO - Fetched data for POLYMED: Current price \u20b92087.90, Green candle low \u20b92081.00, High \u20b92147.60
+2025-07-22 07:24:13,247 - INFO - Fetched data for KPITTECH: Current price \u20b91264.60, Green candle low \u20b91265.60, High \u20b91296.50
+2025-07-22 07:24:14,193 - INFO - Fetched data for BAJAJHFL: Current price \u20b9121.39, Green candle low \u20b9120.75, High \u20b9123.98
+2025-07-22 07:24:15,153 - INFO - Fetched data for HAVELLS: Current price \u20b91531.60, Green candle low \u20b91511.60, High \u20b91537.00
+2025-07-22 07:24:16,082 - INFO - Fetched data for BSE: Current price \u20b92521.30, Green candle low \u20b92433.10, High \u20b92535.00
+2025-07-22 07:27:07,853 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:27:07,856 - WARNING - No historical data for CLEAN
+2025-07-22 07:27:09,829 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:27:09,830 - WARNING - No historical data for GRAVITA
+2025-07-22 07:27:12,080 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:27:12,081 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:27:14,720 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:27:14,721 - WARNING - No historical data for POLYMED
+2025-07-22 07:27:16,704 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:27:16,706 - WARNING - No historical data for KPITTECH
+2025-07-22 07:27:18,682 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:27:18,683 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:27:21,326 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:27:21,327 - WARNING - No historical data for HAVELLS
+2025-07-22 07:27:23,408 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:27:23,409 - WARNING - No historical data for BSE
+2025-07-22 07:27:37,579 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:27:37,580 - WARNING - No historical data for CLEAN
+2025-07-22 07:27:38,634 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:27:38,635 - WARNING - No historical data for GRAVITA
+2025-07-22 07:27:39,648 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:27:39,649 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:27:41,105 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:27:41,106 - WARNING - No historical data for POLYMED
+2025-07-22 07:27:42,461 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:27:42,462 - WARNING - No historical data for KPITTECH
+2025-07-22 07:27:43,490 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:27:43,491 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:27:44,518 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:27:44,519 - WARNING - No historical data for HAVELLS
+2025-07-22 07:27:45,517 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:27:45,517 - WARNING - No historical data for BSE
+2025-07-22 07:29:13,942 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:29:13,943 - WARNING - No historical data for CLEAN
+2025-07-22 07:29:15,352 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:29:15,353 - WARNING - No historical data for GRAVITA
+2025-07-22 07:29:16,806 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:29:16,807 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:29:18,269 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:29:18,270 - WARNING - No historical data for POLYMED
+2025-07-22 07:29:19,720 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:29:19,721 - WARNING - No historical data for KPITTECH
+2025-07-22 07:29:21,663 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:29:21,665 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:29:23,083 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:29:23,085 - WARNING - No historical data for HAVELLS
+2025-07-22 07:29:24,490 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:29:24,491 - WARNING - No historical data for BSE
+2025-07-22 07:29:31,837 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:29:31,839 - WARNING - No historical data for CLEAN
+2025-07-22 07:29:33,264 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:29:33,266 - WARNING - No historical data for GRAVITA
+2025-07-22 07:29:34,675 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:29:34,676 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:29:36,089 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:29:36,090 - WARNING - No historical data for POLYMED
+2025-07-22 07:29:37,501 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:29:37,502 - WARNING - No historical data for KPITTECH
+2025-07-22 07:29:38,902 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:29:38,904 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:29:40,337 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:29:40,338 - WARNING - No historical data for HAVELLS
+2025-07-22 07:29:42,028 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:29:42,029 - WARNING - No historical data for BSE
+2025-07-22 07:29:42,058 - INFO - Exported all stocks to CSV
+2025-07-22 07:29:43,512 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:29:43,514 - WARNING - No historical data for CLEAN
+2025-07-22 07:29:45,019 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:29:45,020 - WARNING - No historical data for GRAVITA
+2025-07-22 07:29:49,825 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:29:49,826 - WARNING - No historical data for CLEAN
+2025-07-22 07:29:51,556 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:29:51,557 - WARNING - No historical data for GRAVITA
+2025-07-22 07:29:52,928 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:29:52,929 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:29:54,335 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:29:54,335 - WARNING - No historical data for POLYMED
+2025-07-22 07:29:55,725 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:29:55,726 - WARNING - No historical data for KPITTECH
+2025-07-22 07:29:57,080 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:29:57,080 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:29:58,474 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:29:58,475 - WARNING - No historical data for HAVELLS
+2025-07-22 07:29:59,845 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:29:59,845 - WARNING - No historical data for BSE
+2025-07-22 07:31:26,185 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:31:26,186 - WARNING - No historical data for CLEAN
+2025-07-22 07:31:27,545 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:31:27,546 - WARNING - No historical data for GRAVITA
+2025-07-22 07:31:28,886 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:31:28,887 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:31:32,646 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:31:32,646 - WARNING - No historical data for CLEAN
+2025-07-22 07:31:35,963 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:31:35,964 - WARNING - No historical data for CLEAN
+2025-07-22 07:31:37,218 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:31:37,218 - WARNING - No historical data for GRAVITA
+2025-07-22 07:31:38,453 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:31:38,453 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:31:39,821 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:31:39,823 - WARNING - No historical data for POLYMED
+2025-07-22 07:31:41,567 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:31:41,567 - WARNING - No historical data for KPITTECH
+2025-07-22 07:31:43,980 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:31:43,981 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:31:45,647 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:31:45,648 - WARNING - No historical data for HAVELLS
+2025-07-22 07:31:47,264 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:31:47,265 - WARNING - No historical data for BSE
+2025-07-22 07:32:26,152 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:32:26,153 - WARNING - No historical data for CLEAN
+2025-07-22 07:32:26,826 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:32:26,827 - WARNING - No historical data for CLEAN
+2025-07-22 07:32:27,984 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:32:27,985 - WARNING - No historical data for GRAVITA
+2025-07-22 07:32:28,165 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:32:28,165 - WARNING - No historical data for GRAVITA
+2025-07-22 07:32:29,345 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:32:29,346 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:32:29,562 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:32:29,563 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:32:31,076 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:32:31,077 - WARNING - No historical data for POLYMED
+2025-07-22 07:32:31,571 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:32:31,573 - WARNING - No historical data for POLYMED
+2025-07-22 07:32:32,418 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:32:32,418 - WARNING - No historical data for KPITTECH
+2025-07-22 07:32:33,292 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:32:33,292 - WARNING - No historical data for KPITTECH
+2025-07-22 07:32:34,062 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:32:34,063 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:32:34,526 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:32:34,529 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:32:34,796 - INFO - HTTP Request: POST https://api.telegram.org/bot7826437102:AAFdVAv7b0go3wOcPLNMZMVAfRM8O2SX3xQ/sendMessage "HTTP/1.1 200 OK"
+2025-07-22 07:32:34,797 - INFO - Sent Telegram message: \U0001f6a8 V20 Buy Alert: BAJAJHFL hit buy price \u20b9130.35! Current: \u20b9121.39
+2025-07-22 07:32:34,803 - INFO - Buy alert triggered for BAJAJHFL at \u20b9121.39
+2025-07-22 07:32:35,549 - ERROR - Failed to send Telegram message: Unknown error in HTTP implementation: RuntimeError('Event loop is closed')
+2025-07-22 07:32:35,567 - INFO - Buy alert triggered for BAJAJHFL at \u20b9121.39
+2025-07-22 07:32:36,071 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:32:36,072 - WARNING - No historical data for HAVELLS
+2025-07-22 07:32:37,031 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:32:37,031 - WARNING - No historical data for HAVELLS
+2025-07-22 07:32:37,499 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:32:37,500 - WARNING - No historical data for BSE
+2025-07-22 07:32:38,446 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:32:38,446 - WARNING - No historical data for BSE
+2025-07-22 07:34:39,380 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:34:39,381 - WARNING - No historical data for CLEAN
+2025-07-22 07:34:40,173 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:34:40,174 - WARNING - No historical data for CLEAN
+2025-07-22 07:34:40,264 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:34:40,265 - WARNING - No historical data for GRAVITA
+2025-07-22 07:34:41,555 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:34:41,556 - WARNING - No historical data for GRAVITA
+2025-07-22 07:34:41,713 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:34:41,714 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:34:42,392 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:34:42,393 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:34:42,640 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:34:42,641 - WARNING - No historical data for POLYMED
+2025-07-22 07:34:43,389 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:34:43,389 - WARNING - No historical data for POLYMED
+2025-07-22 07:34:43,513 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:34:43,515 - WARNING - No historical data for KPITTECH
+2025-07-22 07:34:44,283 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:34:44,284 - WARNING - No historical data for KPITTECH
+2025-07-22 07:34:44,359 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:34:44,360 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:34:45,129 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:34:45,130 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:34:45,256 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:34:45,257 - WARNING - No historical data for HAVELLS
+2025-07-22 07:34:46,041 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:34:46,042 - WARNING - No historical data for HAVELLS
+2025-07-22 07:34:46,119 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:34:46,120 - WARNING - No historical data for BSE
+2025-07-22 07:34:46,846 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:34:46,848 - WARNING - No historical data for BSE
+2025-07-22 07:36:49,388 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:36:49,389 - WARNING - No historical data for CLEAN
+2025-07-22 07:36:50,253 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:36:50,254 - WARNING - No historical data for GRAVITA
+2025-07-22 07:36:51,801 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:36:51,802 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:36:52,750 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:36:52,751 - WARNING - No historical data for POLYMED
+2025-07-22 07:36:53,559 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:36:53,560 - WARNING - No historical data for KPITTECH
+2025-07-22 07:36:54,395 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:36:54,396 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:36:55,267 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:36:55,268 - WARNING - No historical data for HAVELLS
+2025-07-22 07:36:56,135 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:36:56,136 - WARNING - No historical data for BSE
+2025-07-22 07:37:42,847 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:37:42,849 - WARNING - No historical data for CLEAN
+2025-07-22 07:37:44,205 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:37:44,206 - WARNING - No historical data for GRAVITA
+2025-07-22 07:37:45,544 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:37:45,546 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:37:46,872 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:37:46,873 - WARNING - No historical data for POLYMED
+2025-07-22 07:37:48,223 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:37:48,223 - WARNING - No historical data for KPITTECH
+2025-07-22 07:37:49,519 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:37:49,520 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:37:51,082 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:37:51,083 - WARNING - No historical data for HAVELLS
+2025-07-22 07:37:52,435 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:37:52,436 - WARNING - No historical data for BSE
+2025-07-22 07:38:00,054 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:38:00,054 - WARNING - No historical data for CLEAN
+2025-07-22 07:38:01,897 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:38:01,898 - WARNING - No historical data for GRAVITA
+2025-07-22 07:38:05,169 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:38:05,170 - WARNING - No historical data for CLEAN
+2025-07-22 07:38:06,658 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:38:06,660 - WARNING - No historical data for GRAVITA
+2025-07-22 07:38:08,139 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:38:08,140 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:38:09,611 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:38:09,613 - WARNING - No historical data for POLYMED
+2025-07-22 07:38:11,367 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:38:11,369 - WARNING - No historical data for KPITTECH
+2025-07-22 07:38:12,940 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:38:12,941 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:38:14,438 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:38:14,439 - WARNING - No historical data for HAVELLS
+2025-07-22 07:38:15,916 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:38:15,918 - WARNING - No historical data for BSE
+2025-07-22 07:38:25,871 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:38:25,872 - WARNING - No historical data for CLEAN
+2025-07-22 07:40:13,978 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:40:13,979 - WARNING - No historical data for CLEAN
+2025-07-22 07:40:15,107 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:40:15,108 - WARNING - No historical data for GRAVITA
+2025-07-22 07:40:16,253 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:40:16,255 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:40:17,489 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:40:17,491 - WARNING - No historical data for POLYMED
+2025-07-22 07:40:18,626 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:40:18,627 - WARNING - No historical data for KPITTECH
+2025-07-22 07:40:19,745 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:40:19,748 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:40:21,222 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:40:21,224 - WARNING - No historical data for HAVELLS
+2025-07-22 07:40:22,351 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:40:22,353 - WARNING - No historical data for BSE
+2025-07-22 07:40:29,231 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:40:29,231 - WARNING - No historical data for CLEAN
+2025-07-22 07:40:30,000 - INFO - HTTP Request: POST https://api.telegram.org/bot7826437102:AAFdVAv7b0go3wOcPLNMZMVAfRM8O2SX3xQ/sendMessage "HTTP/1.1 200 OK"
+2025-07-22 07:40:30,001 - INFO - Sent Telegram message: \u2139\ufe0f Manual Notification: CLEAN - Current Price: \u20b91276.10, Alert Price: \u20b91267.00, Target Price: \u20b91600.00
+2025-07-22 07:40:31,409 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:40:31,410 - WARNING - No historical data for GRAVITA
+2025-07-22 07:40:31,412 - ERROR - Failed to send Telegram message: Unknown error in HTTP implementation: RuntimeError('Event loop is closed')
+2025-07-22 07:40:32,520 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:40:32,521 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:40:33,267 - INFO - HTTP Request: POST https://api.telegram.org/bot7826437102:AAFdVAv7b0go3wOcPLNMZMVAfRM8O2SX3xQ/sendMessage "HTTP/1.1 200 OK"
+2025-07-22 07:40:33,269 - INFO - Sent Telegram message: \u2139\ufe0f Manual Notification: NAM-INDIA - Current Price: \u20b9863.20, Alert Price: \u20b9810.00, Target Price: \u20b91100.00
+2025-07-22 07:40:34,717 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:40:34,718 - WARNING - No historical data for POLYMED
+2025-07-22 07:40:34,724 - ERROR - Failed to send Telegram message: Unknown error in HTTP implementation: RuntimeError('Event loop is closed')
+2025-07-22 07:40:35,970 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:40:35,972 - WARNING - No historical data for KPITTECH
+2025-07-22 07:40:36,697 - INFO - HTTP Request: POST https://api.telegram.org/bot7826437102:AAFdVAv7b0go3wOcPLNMZMVAfRM8O2SX3xQ/sendMessage "HTTP/1.1 200 OK"
+2025-07-22 07:40:36,699 - INFO - Sent Telegram message: \u2139\ufe0f Manual Notification: KPITTECH - Current Price: \u20b91264.60, Alert Price: \u20b91223.50, Target Price: \u20b91479.00
+2025-07-22 07:40:37,880 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:40:37,881 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:40:37,887 - ERROR - Failed to send Telegram message: Unknown error in HTTP implementation: RuntimeError('Event loop is closed')
+2025-07-22 07:40:39,058 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:40:39,059 - WARNING - No historical data for HAVELLS
+2025-07-22 07:40:39,767 - INFO - HTTP Request: POST https://api.telegram.org/bot7826437102:AAFdVAv7b0go3wOcPLNMZMVAfRM8O2SX3xQ/sendMessage "HTTP/1.1 200 OK"
+2025-07-22 07:40:39,769 - INFO - Sent Telegram message: \u2139\ufe0f Manual Notification: HAVELLS - Current Price: \u20b91531.60, Alert Price: \u20b91389.50, Target Price: \u20b91673.80
+2025-07-22 07:40:41,191 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:40:41,192 - WARNING - No historical data for BSE
+2025-07-22 07:40:41,200 - ERROR - Failed to send Telegram message: Unknown error in HTTP implementation: RuntimeError('Event loop is closed')
+2025-07-22 07:40:41,203 - INFO - Sent manual notifications for all enabled stocks
+2025-07-22 07:40:42,549 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:40:42,549 - WARNING - No historical data for CLEAN
+2025-07-22 07:40:43,693 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:40:43,695 - WARNING - No historical data for GRAVITA
+2025-07-22 07:40:44,872 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:40:44,873 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:40:46,028 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:40:46,030 - WARNING - No historical data for POLYMED
+2025-07-22 07:40:47,209 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:40:47,210 - WARNING - No historical data for KPITTECH
+2025-07-22 07:40:48,383 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:40:48,384 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:40:49,564 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:40:49,565 - WARNING - No historical data for HAVELLS
+2025-07-22 07:40:51,082 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:40:51,083 - WARNING - No historical data for BSE
+2025-07-22 07:41:25,167 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:41:25,169 - WARNING - No historical data for CLEAN
+2025-07-22 07:41:26,278 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:41:26,279 - WARNING - No historical data for GRAVITA
+2025-07-22 07:41:27,357 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:41:27,358 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:41:30,586 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:41:30,586 - WARNING - No historical data for POLYMED
+2025-07-22 07:41:32,213 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:41:32,213 - WARNING - No historical data for KPITTECH
+2025-07-22 07:41:33,277 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:41:33,278 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:41:34,502 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:41:34,504 - WARNING - No historical data for HAVELLS
+2025-07-22 07:41:35,588 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:41:35,589 - WARNING - No historical data for BSE
+2025-07-22 07:41:42,519 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:41:42,520 - WARNING - No historical data for CLEAN
+2025-07-22 07:41:45,934 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:41:45,935 - WARNING - No historical data for CLEAN
+2025-07-22 07:41:46,663 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:41:46,665 - WARNING - No historical data for GRAVITA
+2025-07-22 07:41:47,379 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:41:47,381 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:41:48,114 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:41:48,115 - WARNING - No historical data for POLYMED
+2025-07-22 07:41:48,853 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:41:48,854 - WARNING - No historical data for KPITTECH
+2025-07-22 07:41:49,570 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:41:49,571 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:41:50,312 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:41:50,314 - WARNING - No historical data for HAVELLS
+2025-07-22 07:41:51,688 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:41:51,690 - WARNING - No historical data for BSE
+2025-07-22 07:42:55,524 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:42:55,525 - WARNING - No historical data for CLEAN
+2025-07-22 07:42:56,947 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:42:56,947 - WARNING - No historical data for GRAVITA
+2025-07-22 07:42:58,363 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:42:58,363 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:42:59,787 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:42:59,788 - WARNING - No historical data for POLYMED
+2025-07-22 07:43:01,878 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:43:01,878 - WARNING - No historical data for KPITTECH
+2025-07-22 07:43:03,269 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:43:03,269 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:43:04,818 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:43:04,818 - WARNING - No historical data for HAVELLS
+2025-07-22 07:43:06,267 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:43:06,268 - WARNING - No historical data for BSE
+2025-07-22 07:43:18,740 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:43:18,740 - WARNING - No historical data for CLEAN
+2025-07-22 07:43:20,320 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:43:20,320 - WARNING - No historical data for GRAVITA
+2025-07-22 07:43:22,239 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:43:22,240 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:43:24,018 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:43:24,020 - WARNING - No historical data for POLYMED
+2025-07-22 07:43:25,203 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:43:25,204 - WARNING - No historical data for CLEAN
+2025-07-22 07:43:25,461 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:43:25,461 - WARNING - No historical data for KPITTECH
+2025-07-22 07:43:26,654 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:43:26,654 - WARNING - No historical data for GRAVITA
+2025-07-22 07:43:26,852 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:43:26,853 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:43:28,058 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:43:28,058 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:43:28,438 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:43:28,438 - WARNING - No historical data for HAVELLS
+2025-07-22 07:43:29,607 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:43:29,608 - WARNING - No historical data for POLYMED
+2025-07-22 07:43:29,867 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:43:29,868 - WARNING - No historical data for BSE
+2025-07-22 07:43:31,349 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:43:31,350 - WARNING - No historical data for KPITTECH
+2025-07-22 07:43:32,880 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:43:32,881 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:43:34,323 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:43:34,324 - WARNING - No historical data for HAVELLS
+2025-07-22 07:43:35,737 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:43:35,738 - WARNING - No historical data for BSE
+2025-07-22 07:44:51,123 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:44:51,124 - WARNING - No historical data for CLEAN
+2025-07-22 07:44:52,396 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:44:52,397 - WARNING - No historical data for GRAVITA
+2025-07-22 07:44:53,620 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:44:53,621 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:44:54,794 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:44:54,795 - WARNING - No historical data for POLYMED
+2025-07-22 07:44:56,000 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:44:56,001 - WARNING - No historical data for KPITTECH
+2025-07-22 07:44:57,176 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:44:57,178 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:44:58,393 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:44:58,394 - WARNING - No historical data for HAVELLS
+2025-07-22 07:44:59,601 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:44:59,602 - WARNING - No historical data for BSE
+2025-07-22 07:45:06,367 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:45:06,369 - WARNING - No historical data for CLEAN
+2025-07-22 07:45:07,350 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:45:07,351 - WARNING - No historical data for GRAVITA
+2025-07-22 07:45:08,403 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:45:08,404 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:45:09,444 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:45:09,445 - WARNING - No historical data for POLYMED
+2025-07-22 07:45:10,414 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:45:10,415 - WARNING - No historical data for KPITTECH
+2025-07-22 07:45:11,834 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:45:11,835 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:45:12,841 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:45:12,842 - WARNING - No historical data for HAVELLS
+2025-07-22 07:45:13,813 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:45:13,814 - WARNING - No historical data for BSE
+2025-07-22 07:45:14,757 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:45:14,757 - WARNING - No historical data for CLEAN
+2025-07-22 07:45:15,668 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:45:15,669 - WARNING - No historical data for GRAVITA
+2025-07-22 07:45:16,577 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:45:16,577 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:45:17,508 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:45:17,509 - WARNING - No historical data for POLYMED
+2025-07-22 07:45:18,502 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:45:18,503 - WARNING - No historical data for KPITTECH
+2025-07-22 07:45:19,438 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:45:19,439 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:45:20,388 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:45:20,389 - WARNING - No historical data for HAVELLS
+2025-07-22 07:45:21,658 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:45:21,659 - WARNING - No historical data for BSE
+2025-07-22 07:45:32,271 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:45:32,272 - WARNING - No historical data for CLEAN
+2025-07-22 07:45:33,300 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:45:33,301 - WARNING - No historical data for GRAVITA
+2025-07-22 07:45:34,299 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:45:34,300 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:45:35,293 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:45:35,294 - WARNING - No historical data for POLYMED
+2025-07-22 07:45:37,525 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:45:37,525 - WARNING - No historical data for KPITTECH
+2025-07-22 07:45:37,894 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:45:37,895 - WARNING - No historical data for CLEAN
+2025-07-22 07:45:38,231 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:45:38,231 - WARNING - No historical data for CLEAN
+2025-07-22 07:45:39,294 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:45:39,294 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:45:39,708 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:45:39,709 - WARNING - No historical data for GRAVITA
+2025-07-22 07:45:40,029 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:45:40,030 - WARNING - No historical data for GRAVITA
+2025-07-22 07:45:42,083 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:45:42,084 - WARNING - No historical data for HAVELLS
+2025-07-22 07:45:42,434 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:45:42,434 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:45:42,773 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:45:42,775 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:45:43,822 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:45:43,822 - WARNING - No historical data for BSE
+2025-07-22 07:45:44,222 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:45:44,223 - WARNING - No historical data for POLYMED
+2025-07-22 07:45:44,346 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:45:44,347 - WARNING - No historical data for POLYMED
+2025-07-22 07:45:45,386 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:45:45,387 - WARNING - No historical data for KPITTECH
+2025-07-22 07:45:45,512 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:45:45,513 - WARNING - No historical data for KPITTECH
+2025-07-22 07:45:46,538 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:45:46,540 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:45:46,682 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:45:46,683 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:45:47,816 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:45:47,817 - WARNING - No historical data for HAVELLS
+2025-07-22 07:45:47,852 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:45:47,853 - WARNING - No historical data for HAVELLS
+2025-07-22 07:45:48,918 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:45:48,918 - WARNING - No historical data for BSE
+2025-07-22 07:45:49,045 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:45:49,045 - WARNING - No historical data for BSE
+2025-07-22 07:46:06,213 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:46:06,214 - WARNING - No historical data for CLEAN
+2025-07-22 07:46:07,124 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:07,124 - WARNING - No historical data for GRAVITA
+2025-07-22 07:46:09,544 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:46:09,545 - WARNING - No historical data for CLEAN
+2025-07-22 07:46:10,436 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:10,437 - WARNING - No historical data for GRAVITA
+2025-07-22 07:46:13,885 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:46:13,885 - WARNING - No historical data for CLEAN
+2025-07-22 07:46:14,934 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:14,935 - WARNING - No historical data for GRAVITA
+2025-07-22 07:46:15,882 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:15,883 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:46:16,804 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:16,805 - WARNING - No historical data for POLYMED
+2025-07-22 07:46:17,744 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:17,745 - WARNING - No historical data for KPITTECH
+2025-07-22 07:46:18,648 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:46:18,649 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:46:19,598 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:19,598 - WARNING - No historical data for HAVELLS
+2025-07-22 07:46:20,510 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:20,512 - WARNING - No historical data for BSE
+2025-07-22 07:46:30,500 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:46:30,502 - WARNING - No historical data for CLEAN
+2025-07-22 07:46:31,619 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:31,620 - WARNING - No historical data for GRAVITA
+2025-07-22 07:46:32,471 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:32,472 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:46:33,323 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:33,324 - WARNING - No historical data for POLYMED
+2025-07-22 07:46:34,194 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:34,195 - WARNING - No historical data for KPITTECH
+2025-07-22 07:46:35,670 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:46:35,672 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:46:36,530 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:36,531 - WARNING - No historical data for HAVELLS
+2025-07-22 07:46:37,413 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:37,414 - WARNING - No historical data for BSE
+2025-07-22 07:46:38,223 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:46:38,225 - WARNING - No historical data for CLEAN
+2025-07-22 07:46:38,999 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:39,000 - WARNING - No historical data for GRAVITA
+2025-07-22 07:46:39,783 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:39,784 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:46:40,583 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:40,584 - WARNING - No historical data for POLYMED
+2025-07-22 07:46:41,953 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:41,954 - WARNING - No historical data for KPITTECH
+2025-07-22 07:46:42,749 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:46:42,750 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:46:43,819 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:43,820 - WARNING - No historical data for HAVELLS
+2025-07-22 07:46:44,703 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:44,704 - WARNING - No historical data for BSE
+2025-07-22 07:46:44,925 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:46:44,926 - WARNING - No historical data for CLEAN
+2025-07-22 07:46:45,963 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:45,965 - WARNING - No historical data for GRAVITA
+2025-07-22 07:46:46,946 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:46,947 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:46:47,937 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:47,938 - WARNING - No historical data for POLYMED
+2025-07-22 07:46:48,937 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:48,938 - WARNING - No historical data for KPITTECH
+2025-07-22 07:46:50,428 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:46:50,429 - WARNING - No historical data for CLEAN
+2025-07-22 07:46:50,622 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:46:50,623 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:46:51,675 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:46:51,676 - WARNING - No historical data for CLEAN
+2025-07-22 07:46:53,431 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:53,433 - WARNING - No historical data for GRAVITA
+2025-07-22 07:46:53,702 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:53,703 - WARNING - No historical data for HAVELLS
+2025-07-22 07:46:53,813 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:53,814 - WARNING - No historical data for GRAVITA
+2025-07-22 07:46:55,039 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:55,040 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:46:55,260 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:55,261 - WARNING - No historical data for BSE
+2025-07-22 07:46:56,124 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:56,125 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:46:56,220 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:56,221 - WARNING - No historical data for POLYMED
+2025-07-22 07:46:57,159 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:57,160 - WARNING - No historical data for POLYMED
+2025-07-22 07:46:57,418 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:57,419 - WARNING - No historical data for KPITTECH
+2025-07-22 07:46:58,328 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:58,330 - WARNING - No historical data for KPITTECH
+2025-07-22 07:46:58,597 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:46:58,598 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:46:59,522 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:46:59,523 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:46:59,851 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:46:59,852 - WARNING - No historical data for HAVELLS
+2025-07-22 07:47:01,669 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:47:01,670 - WARNING - No historical data for HAVELLS
+2025-07-22 07:47:01,929 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:47:01,929 - WARNING - No historical data for BSE
+2025-07-22 07:47:03,225 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:47:03,226 - WARNING - No historical data for BSE
+2025-07-22 07:48:07,640 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:48:07,640 - WARNING - No historical data for CLEAN
+2025-07-22 07:48:08,239 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:48:08,240 - WARNING - No historical data for GRAVITA
+2025-07-22 07:48:09,102 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:48:09,103 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:48:09,690 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:48:09,690 - WARNING - No historical data for POLYMED
+2025-07-22 07:48:10,245 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:48:10,246 - WARNING - No historical data for KPITTECH
+2025-07-22 07:48:11,193 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:48:11,194 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:48:12,985 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:48:12,986 - WARNING - No historical data for HAVELLS
+2025-07-22 07:48:13,650 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:48:13,651 - WARNING - No historical data for BSE
+2025-07-22 07:48:22,118 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:48:22,119 - WARNING - No historical data for CLEAN
+2025-07-22 07:48:22,720 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:48:22,721 - WARNING - No historical data for GRAVITA
+2025-07-22 07:48:23,411 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:48:23,412 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:48:23,992 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:48:23,992 - WARNING - No historical data for POLYMED
+2025-07-22 07:48:24,542 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:48:24,543 - WARNING - No historical data for KPITTECH
+2025-07-22 07:48:25,082 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:48:25,083 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:48:25,726 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:48:25,727 - WARNING - No historical data for HAVELLS
+2025-07-22 07:48:26,301 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:48:26,302 - WARNING - No historical data for BSE
+2025-07-22 07:48:56,759 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:48:56,760 - WARNING - No historical data for CLEAN
+2025-07-22 07:48:57,491 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:48:57,492 - WARNING - No historical data for GRAVITA
+2025-07-22 07:48:58,232 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:48:58,233 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:48:59,153 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:48:59,154 - WARNING - No historical data for POLYMED
+2025-07-22 07:49:00,005 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:49:00,006 - WARNING - No historical data for KPITTECH
+2025-07-22 07:49:01,395 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:49:01,395 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:49:01,519 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:49:01,521 - WARNING - No historical data for CLEAN
+2025-07-22 07:49:02,387 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:49:02,388 - WARNING - No historical data for HAVELLS
+2025-07-22 07:49:02,459 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:49:02,460 - WARNING - No historical data for GRAVITA
+2025-07-22 07:49:03,311 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:49:03,312 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:49:03,316 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:49:03,318 - WARNING - No historical data for BSE
+2025-07-22 07:49:03,586 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:49:03,587 - WARNING - No historical data for CLEAN
+2025-07-22 07:49:04,284 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:49:04,285 - WARNING - No historical data for POLYMED
+2025-07-22 07:49:04,300 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:49:04,301 - WARNING - No historical data for GRAVITA
+2025-07-22 07:49:04,572 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:49:04,575 - WARNING - No historical data for CLEAN
+2025-07-22 07:49:05,056 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:49:05,057 - WARNING - No historical data for KPITTECH
+2025-07-22 07:49:05,075 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:49:05,076 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:49:05,332 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:49:05,333 - WARNING - No historical data for GRAVITA
+2025-07-22 07:49:05,801 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:49:05,802 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:49:05,828 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:49:05,829 - WARNING - No historical data for POLYMED
+2025-07-22 07:49:06,090 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:49:06,091 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:49:06,577 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:49:06,578 - WARNING - No historical data for KPITTECH
+2025-07-22 07:49:06,578 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:49:06,579 - WARNING - No historical data for HAVELLS
+2025-07-22 07:49:06,846 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:49:06,847 - WARNING - No historical data for POLYMED
+2025-07-22 07:49:07,275 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:49:07,276 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:49:07,401 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:49:07,402 - WARNING - No historical data for BSE
+2025-07-22 07:49:07,536 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:49:07,537 - WARNING - No historical data for KPITTECH
+2025-07-22 07:49:07,951 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:49:07,953 - WARNING - No historical data for HAVELLS
+2025-07-22 07:49:08,180 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:49:08,181 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:49:08,587 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:49:08,588 - WARNING - No historical data for BSE
+2025-07-22 07:49:08,910 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:49:08,911 - WARNING - No historical data for HAVELLS
+2025-07-22 07:49:09,577 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:49:09,578 - WARNING - No historical data for BSE
+2025-07-22 07:49:33,543 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:49:33,545 - WARNING - No historical data for CLEAN
+2025-07-22 07:49:35,289 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:49:35,290 - WARNING - No historical data for GRAVITA
+2025-07-22 07:49:37,019 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:49:37,020 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:49:38,957 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:49:38,958 - WARNING - No historical data for CLEAN
+2025-07-22 07:49:40,271 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:49:40,272 - WARNING - No historical data for GRAVITA
+2025-07-22 07:49:46,105 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:49:46,106 - WARNING - No historical data for CLEAN
+2025-07-22 07:49:48,531 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:49:48,533 - WARNING - No historical data for CLEAN
+2025-07-22 07:49:50,232 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:49:50,233 - WARNING - No historical data for GRAVITA
+2025-07-22 07:49:51,948 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:49:51,949 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:49:53,594 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:49:53,595 - WARNING - No historical data for POLYMED
+2025-07-22 07:49:55,223 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:49:55,224 - WARNING - No historical data for KPITTECH
+2025-07-22 07:49:56,890 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:49:56,891 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:49:58,501 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:49:58,502 - WARNING - No historical data for HAVELLS
+2025-07-22 07:50:00,235 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:50:00,236 - WARNING - No historical data for BSE
+2025-07-22 07:52:03,222 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:52:03,222 - WARNING - No historical data for CLEAN
+2025-07-22 07:52:04,311 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:52:04,312 - WARNING - No historical data for GRAVITA
+2025-07-22 07:52:05,372 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:52:05,374 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:52:06,430 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:52:06,430 - WARNING - No historical data for POLYMED
+2025-07-22 07:52:07,482 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:52:07,483 - WARNING - No historical data for KPITTECH
+2025-07-22 07:52:08,765 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:52:08,766 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:52:09,913 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:52:09,914 - WARNING - No historical data for HAVELLS
+2025-07-22 07:52:11,548 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:52:11,549 - WARNING - No historical data for BSE
+2025-07-22 07:54:14,347 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:54:14,349 - WARNING - No historical data for CLEAN
+2025-07-22 07:54:15,727 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:54:15,729 - WARNING - No historical data for GRAVITA
+2025-07-22 07:54:17,045 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:54:17,046 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:54:18,370 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:54:18,371 - WARNING - No historical data for POLYMED
+2025-07-22 07:54:19,755 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:54:19,756 - WARNING - No historical data for KPITTECH
+2025-07-22 07:54:21,352 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:54:21,354 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:54:22,709 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:54:22,712 - WARNING - No historical data for HAVELLS
+2025-07-22 07:54:24,032 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:54:24,033 - WARNING - No historical data for BSE
+2025-07-22 07:56:25,264 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:56:25,265 - WARNING - No historical data for CLEAN
+2025-07-22 07:56:25,853 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:56:25,855 - WARNING - No historical data for GRAVITA
+2025-07-22 07:56:26,418 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:56:26,418 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:56:27,029 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:56:27,030 - WARNING - No historical data for POLYMED
+2025-07-22 07:56:27,595 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:56:27,596 - WARNING - No historical data for KPITTECH
+2025-07-22 07:56:28,176 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:56:28,177 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:56:28,774 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:56:28,775 - WARNING - No historical data for HAVELLS
+2025-07-22 07:56:29,319 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:56:29,319 - WARNING - No historical data for BSE
+2025-07-22 07:58:32,929 - ERROR - CLEAN.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, ytd, max, etc.
+2025-07-22 07:58:32,931 - WARNING - No historical data for CLEAN
+2025-07-22 07:58:34,233 - ERROR - GRAVITA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:58:34,234 - WARNING - No historical data for GRAVITA
+2025-07-22 07:58:36,048 - ERROR - NAM-INDIA.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:58:36,050 - WARNING - No historical data for NAM-INDIA
+2025-07-22 07:58:37,284 - ERROR - POLYMED.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:58:37,286 - WARNING - No historical data for POLYMED
+2025-07-22 07:58:38,548 - ERROR - KPITTECH.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:58:38,549 - WARNING - No historical data for KPITTECH
+2025-07-22 07:58:39,689 - ERROR - BAJAJHFL.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, ytd, max, etc.
+2025-07-22 07:58:39,689 - WARNING - No historical data for BAJAJHFL
+2025-07-22 07:58:41,211 - ERROR - HAVELLS.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:58:41,213 - WARNING - No historical data for HAVELLS
+2025-07-22 07:58:42,442 - ERROR - BSE.NS: Period '1y2mo' is invalid, must be of the format 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max, etc.
+2025-07-22 07:58:42,443 - WARNING - No historical data for BSE
+2025-07-22 07:59:50,023 - INFO - Stock alert system started in background
+2025-07-22 08:00:14,930 - INFO - Stock alert system stopped by user
