@@ -176,6 +176,18 @@ if st.sidebar.button("Send Manual Notification"):
                     asyncio.run(send_telegram_message(message))
                     logging.info(f"Manual sell alert triggered for {row['symbol']} at ₹{current_price:.2f}")
 
+# Bulk actions in sidebar
+st.sidebar.subheader("Bulk Actions")
+if st.sidebar.button("Reset Alert Triggered for All Stocks"):
+    conn = sqlite3.connect('stock_alerts.db')
+    c = conn.cursor()
+    c.execute("UPDATE stocks SET alert_triggered = 0, last_notified_alert = 0")
+    conn.commit()
+    conn.close()
+    st.sidebar.success("Alert triggered reset for all stocks!")
+    logging.info("Reset alert triggered for all stocks")
+    st.rerun()
+
 # Strategy management
 st.sidebar.subheader("Manage Strategies")
 new_strategy = st.sidebar.text_input("Add New Strategy")
@@ -319,7 +331,7 @@ if not df.empty:
                     ecol1, ecol2 = st.columns(2)
                     with ecol1:
                         new_alert_price = st.number_input("New Alert Price (V20 Low)", value=float(row['alert_price']), key=f"alert_{row['id']}")
-                    with ecol2:
+                    with col2:
                         new_target_price = st.number_input("New Target Price (V20 High)", value=float(row['target_price']), key=f"target_{row['id']}")
                     if st.form_submit_button("Save Changes"):
                         conn = sqlite3.connect('stock_alerts.db')
